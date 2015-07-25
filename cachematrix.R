@@ -17,7 +17,9 @@ list(setmatrix = setmatrix, getmatrix = getmatrix, setmean = setmean, getmean = 
 }
 
 
-## (2) cachesolve is a function that first checks if the inverse of a matrix is present in the cache. If yes, the inverse is fetched from the cache using the getinverse function. If not, the new inverse is computed and the result is stored in the cache.
+## (2) cachesolve is a function that first checks if the inverse of a matrix is present in the cache.
+##If yes, the inverse is fetched from the cache using the getinverse function. 
+##If not, the new inverse is computed and the result is stored in the cache.
 
 cacheSolve <- function(x, ...) {m  <- x$getinverse()
 if (!is.null(m)){
